@@ -1,6 +1,47 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
+
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 25%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,6 +111,14 @@
             <div class="row">
                 <div class="col-md-4">
                     <h2 class="heading">About Me</h2>
+					
+					<div class="container">
+						<img src="images/me.jpg" alt="Avatar" class="image">
+						<div class="overlay">
+						<div class="text">I am an electrical engineer and microelectronics is my major.
+						I have a solid background in wireless communication, electronics, embedded systems and networking</div>
+						</div>
+						</div>
                 </div>
                 <div class="col-md-8">
                     <p>
@@ -181,6 +230,8 @@
             <li>FPGA</li>
             <li>Vivado</li>
             <li>Libero</li>
+			<li>Digital Signal Processing</li>
+			<li>Telecommunication</li>
 
         </ul>
     </div>
@@ -205,7 +256,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2020 Ghazi
+                        Copyright &copy; 2021 Ghazi
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -216,13 +267,13 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/ghaziiii" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
                             <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/ghazi-aoussaji-292067134/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
